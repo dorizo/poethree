@@ -3,6 +3,7 @@
 #-------------------------
 
 /app/config/database.php
+/app/config/App.php
 # OS X
 .DS_Store
 .AppleDouble
