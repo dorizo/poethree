@@ -343,7 +343,7 @@ foreach ($slider as $slider) {  ?>
               <div class="divider-content" data-aos="fade-up" data-aos-duration="1000">
                 <span>Profile</span>
                 <img class="logo-divider" src="<?=base_url("assets/upload/image/".$site["icon"])?>" alt="Logo">
-                <p><?php print_r($site["singkatan "]);?></p>
+                <p><?php print_r($site["singkatan"]);?></p>
                 <a href="about.html" class="btn-theme btn-black btn-border">Read more</a>
               </div>
               <div class="video-content" data-aos="fade-up" data-aos-duration="1000">
