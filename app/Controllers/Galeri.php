@@ -37,7 +37,9 @@ class Galeri extends BaseController
 
         // Update hits
 
-        $data = [
+        $data = ['title'  => $berita['judul_galeri'],
+            'description' => $berita['judul_galeri'],
+            'keywords'    => $berita['judul_galeri'],
             'galeri'      => $berita,
             'detail'      => $detail,
             'kategori'      => $kategori,
