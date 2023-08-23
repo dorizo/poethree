@@ -41,7 +41,7 @@ $site        = $konfigurasi->listing();
             </a>
           </li>
           <!-- Berita -->
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-newspaper"></i>
               <p>Berita, Profil &amp; Layanan
@@ -68,12 +68,12 @@ $site        = $konfigurasi->listing();
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
           <!-- Galeri -->
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-image"></i>
-              <p>Galeri &amp; Banner
+              <p>Galeri &amp; Banner Produk
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -158,7 +158,7 @@ $site        = $konfigurasi->listing();
             </a>
           </li>
           <!-- Staff -->
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-image"></i>
               <p>Staff &amp; Team
@@ -185,7 +185,7 @@ $site        = $konfigurasi->listing();
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
           <!-- pengguna -->
           <li class="nav-item">
             <a href="<?= base_url('admin/user') ?>" class="nav-link">
@@ -229,12 +229,12 @@ $site        = $konfigurasi->listing();
             </ul>
           </li>
           <!-- panduan -->
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="<?= base_url('admin/undangan') ?>" class="nav-link">
               <i class="nav-icon fas fa-file-pdf"></i>
               <p>UNDANGAN</p>
             </a>
-          </li>
+          </li> -->
           <!-- panduan -->
           <li class="nav-item">
             <a href="<?= base_url('admin/panduan') ?>" class="nav-link">

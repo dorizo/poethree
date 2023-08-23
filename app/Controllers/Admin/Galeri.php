@@ -89,7 +89,67 @@ class Galeri extends BaseController
         ];
         echo view('admin/layout/wrapper', $data);
     }
+    // image per gallery
 
+    
+    public function image($id_galeri)
+    {
+        $m_kategori_galeri = new Kategori_galeri_model();
+        $m_galeri          = new Galeri_model();
+        $kategori_galeri   = $m_kategori_galeri->listing();
+        $galeri            = $m_galeri->detail($id_galeri);
+        $detailgaleri      = $m_galeri->gallerydetail($id_galeri);
+     
+
+        if ($this->request->getMethod() === 'post' && $this->validate(
+            [
+                'id_galeri' => 'required',
+                'gambar' => [
+                    'mime_in[gambar,image/jpg,image/jpeg,image/gif,image/png]',
+                    
+                ],
+            ]
+        )) {
+            if (! empty($_FILES['gambar']['name'])) {
+                // Image upload
+                $avatar   = $this->request->getFile('gambar');
+                $namabaru = str_replace(' ', '-', $avatar->getName());
+                $avatar->move(WRITEPATH . '../assets/upload/image/', $namabaru);
+                // Create thumb
+                $image = \Config\Services::image()
+                    ->withFile(WRITEPATH . '../assets/upload/image/' . $namabaru)
+                    ->fit(100, 100, 'center')
+                    ->save(WRITEPATH . '../assets/upload/image/thumbs/' . $namabaru);
+                // masuk database
+                $data = [
+                    'id_galeri'          => $id_galeri,
+                    'gambar'             => $namabaru,
+                   
+                ];
+                $m_galeri->addgaleri($data);
+
+                return redirect()->to(base_url('admin/galeri/image/'.$id_galeri))->with('sukses', 'Data Berhasil di Simpan');
+            }
+            $data = [
+                'id_galeri'          => $id_galeri,
+               
+            ];
+            $m_galeri->addgaleri($data);
+
+            return redirect()->to(base_url('admin/galeri/image/'.$id_galeri))->with('sukses', 'Data Berhasil di Simpan');
+        }
+
+        
+          $data = ['title'      => 'Detail Galery image: ' . $galeri['judul_galeri'],
+        'kategori_galeri' => $kategori_galeri,
+        'galeri'          => $galeri,
+        'detailgaleri'          => $detailgaleri,
+        'content'         => 'admin/galeri/image',
+    ];
+    
+    echo view('admin/layout/wrapper', $data);
+        
+    }
     // edit
     public function edit($id_galeri)
     {
@@ -169,4 +229,19 @@ class Galeri extends BaseController
 
         return redirect()->to(base_url('admin/galeri'));
     }
+    public function deleteimage($id_galeri , $id)
+    {
+        // echo $id_galeri;
+        checklogin();
+
+        $m_galeri = new Galeri_model();
+        $m_galeri->deletegaleri($id_galeri);
+        // $data     = ['id_galeri' => $id_galeri];
+        // $m_galeri->delete($data);
+        // masuk database
+        // $this->session->setFlashdata('sukses', 'Data telah dihapus');
+
+        return redirect()->to(base_url('admin/galeri/image/'.$id));
+    }
+    
 }

@@ -34,6 +34,8 @@ class Galeri_model extends Model
 
         return $query->getResultArray();
     }
+
+
     // total
     public function total()
     {
@@ -56,7 +58,29 @@ class Galeri_model extends Model
 
         return $query->getRowArray();
     }
+    public function gallerydetail($id_galeri)
+    {
+        $builder = $this->db->table('gellery_image');
+        // $builder->select('galeri.*, kategori_galeri.nama_kategori_galeri, kategori_galeri.slug_kategori_galeri, users.nama');
+        // $builder->join('galleri', 'kategori_galeri.id_kategori_galeri = galeri.id_kategori_galeri', 'LEFT');
+        // $builder->join('users', 'gellery_image.id_galeri = galeri.id_galeri', 'LEFT');
+        $builder->where('gellery_image.id_galeri', $id_galeri);
+        // $builder->orderBy('gellery_image.id_gellery_image', 'DESC');
+        $query = $builder->get();
 
+        return $query->getResultArray();
+    }
+
+    public function addgaleri($data){
+        $builder = $this->db->table('gellery_image');
+        $builder->insert($data); 
+    }
+
+    public function deletegaleri($data){
+        $builder = $this->db->table('gellery_image');
+        
+        $builder->delete(['id_gellery_image' => $data]);
+    }
     // tambah
     public function tambah($data)
     {
@@ -93,4 +117,5 @@ class Galeri_model extends Model
 
         return $query->getResultArray();
     }
+    
 }

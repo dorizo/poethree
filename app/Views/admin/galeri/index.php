@@ -42,6 +42,7 @@ foreach ($galeri as $galeri) { ?>
 
 				<a href="<?= base_url('admin/galeri/edit/' . $galeri['id_galeri']) ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
 				<a href="<?= base_url('admin/galeri/delete/' . $galeri['id_galeri']) ?>" class="btn btn-dark btn-sm" onclick="confirmation(event)"><i class="fa fa-trash"></i></a>
+				<a href="<?= base_url('admin/galeri/image/' . $galeri['id_galeri']) ?>" class="btn btn-success btn-sm"><i class="fa fa-images"></i></a>
 			</td>
 		</tr>
 		<?php $no++; } ?>
