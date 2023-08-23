@@ -36,7 +36,7 @@ class Galeri extends BaseController
         $kategori = $m_berita->kategori($berita["slug_kategori_galeri"]);
 
         // Update hits
-        $data = ['id_berita' => $berita['id_berita'],
+        $data = ['id_berita' => $berita['id_galeri'],
             'hits'           => $berita['hits'] + 1,
         ];
         $m_berita->edit($data);
