@@ -36,12 +36,12 @@ $menu_layanan = $menu->layanan();
                 <a href="<?=base_url("index.php")?>">
                   <img class="logo-main d-none d-sm-block" src="<?=base_url("template/assets/img/poethree.png")?>" alt="Logo" />
                   <img class="logo-main d-sm-none" src="<?=base_url("template/assets/img/poethree.png")?>" alt="Logo" />
-                  <img class="logo-light  d-sm-none" src="<?=base_url("template/assets/img/poethree.png")?>" alt="Logo" />
+                  <img class="logo-light  d-sm-none p-2" src="<?=base_url("template/assets/img/poethree.png")?>" alt="Logo" />
                 </a>
               </div>
               <div class="header-navigation-area d-none d-xl-block">
                 <ul class="main-menu nav justify-content-center position-relative">
-                  <li class="active"><a href="<?=base_url("index.php")?>">Home</a></li>
+                  <li class="active"><a href="<?=base_url("index.php")?>">HOME</a></li>
                   <li class="has-submenu"><a href="index.html">CATALOGUE</a>
                     <ul class="submenu-nav submenu-nav-mega">
                       <li class="mega-menu-item"><a class="srmenu-title" href="#">Hijab/Scarves</a>
@@ -80,7 +80,7 @@ $menu_layanan = $menu->layanan();
                   
                   <li><a href="<?=base_url("galeri/kategori/Accessories")?>">NEW SERIES</a></li>
                   
-                  <li><a href="<?=base_url("kontak")?>">Contact</a></li>
+                  <li><a href="<?=base_url("kontak")?>">CONTACT</a></li>
                 </ul>
               </div>
             </div>
