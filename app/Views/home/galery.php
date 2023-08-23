@@ -15,9 +15,11 @@
                   <div class="slider-content-area">
                     <div class="content">
                       <div class="inner-content">
+                        <a href="<?=base_url("galeri/read/".$value["id_galeri"]."/".$value["judul_galeri"])?>">
                         <span><?=$value["nama_kategori_galeri"]?></span>
                         <h2><?=$value["judul_galeri"]?></h2>
                         <p><?=$value["isi"]?></p>
+                         </a>
                       </div>
                     </div>
                   </div>

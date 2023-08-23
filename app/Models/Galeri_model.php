@@ -61,11 +61,7 @@ class Galeri_model extends Model
     public function gallerydetail($id_galeri)
     {
         $builder = $this->db->table('gellery_image');
-        // $builder->select('galeri.*, kategori_galeri.nama_kategori_galeri, kategori_galeri.slug_kategori_galeri, users.nama');
-        // $builder->join('galleri', 'kategori_galeri.id_kategori_galeri = galeri.id_kategori_galeri', 'LEFT');
-        // $builder->join('users', 'gellery_image.id_galeri = galeri.id_galeri', 'LEFT');
         $builder->where('gellery_image.id_galeri', $id_galeri);
-        // $builder->orderBy('gellery_image.id_gellery_image', 'DESC');
         $query = $builder->get();
 
         return $query->getResultArray();
