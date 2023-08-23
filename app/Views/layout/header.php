@@ -35,8 +35,8 @@ $menu_layanan = $menu->layanan();
               <div class="header-logo-area">
                 <a href="<?=base_url("index.php")?>">
                   <img class="logo-main d-none d-sm-block" src="<?=base_url("template/assets/img/poethree.png")?>" alt="Logo" />
-                  <img class="logo-main d-sm-none" src="<?=base_url("template/assets/img/poethree.png")?>" alt="Logo" />
-                  <img class="logo-light  d-sm-none p-2" src="<?=base_url("template/assets/img/poethree.png")?>" alt="Logo" />
+                  <img class="logo-main d-sm-none p-4" src="<?=base_url("template/assets/img/poethree.png")?>" alt="Logo" />
+                  <img class="logo-light  d-sm-none" src="<?=base_url("template/assets/img/poethree.png")?>" alt="Logo" />
                 </a>
               </div>
               <div class="header-navigation-area d-none d-xl-block">
