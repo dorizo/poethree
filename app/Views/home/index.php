@@ -75,7 +75,7 @@ foreach ($slider as $slider) {  ?>
             <!-- Start Product Item -->
             <div class="product-item">
               <div class="product-thumb">
-                <a href="">
+                <a href="<?=base_url("galeri/read/".$value["id_galeri"]."/".$value["judul_galeri"])?>">
                   <img src="<?= base_url('assets/upload/image/' . $value['gambar']) ?>" alt="Moren-Shop">
                   <span class="bg-thumb" data-bg-img="<?= base_url('assets/upload/image/' . $value['gambar']) ?>"></span>
                   <span class="thumb-overlay"></span>
