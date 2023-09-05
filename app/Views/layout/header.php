@@ -78,7 +78,7 @@ $menu_layanan = $menu->layanan();
                     </ul>
                   </li>
                   
-                  <li><a href="<?=base_url("galeri/kategori/Accessories")?>">NEW SERIES</a></li>
+                  <li><a href="<?=base_url("galeri")?>">NEW SERIES</a></li>
                   
                   <li><a href="<?=base_url("kontak")?>">CONTACT</a></li>
                 </ul>
