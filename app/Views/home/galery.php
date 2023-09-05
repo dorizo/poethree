@@ -18,7 +18,7 @@
                         <a href="<?=base_url("galeri/read/".$value["id_galeri"]."/".$value["judul_galeri"])?>">
                         <span><?=$value["nama_kategori_galeri"]?></span>
                         <h2><?=$value["judul_galeri"]?></h2>
-                        <p><?=substr($value["isi"] , 0 , 50)?></p>
+                        <p><?=substr($value["isi"] , 0 , 100)?>...</p>
                          </a>
                       </div>
                     </div>
