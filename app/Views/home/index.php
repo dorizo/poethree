@@ -150,33 +150,25 @@ foreach ($slider as $slider) {  ?>
           <div class="masonry-item item-size3">
             <div class="category-item">
               <div class="thumb">
-                <img src="<?=base_url("template")?>/assets/img/shop/category/g4.jpg" alt="Moren-Shop">
+                <img src="<?=base_url("template")?>/assets/img/shop/categorys/g2.png" alt="Moren-Shop">
               </div>
               <div class="content">
                 <div class="inner-content">
-                  <h4 class="title">Brazers | Jackets</h4>
-                  <div class="meta">
-                    <a href="shop.html">Midi</a>
-                    <a href="shop.html">Maxi</a>
-                  </div>
-                  <a href="shop.html" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
-                </div>
+                  <h4 class="title">Clothing | Tunic</h4>
+                  <a href="<?=base_url("galeri/kategori/Tunic");?>" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
+                 </div>
               </div>
             </div>
           </div>
           <div class="masonry-item">
             <div class="category-item">
               <div class="thumb">
-                <img src="<?=base_url("template")?>/assets/img/shop/category/g2.jpg" alt="Moren-Shop">
+                <img src="<?=base_url("template")?>/assets/img/shop/categorys/g4.png" alt="Moren-Shop">
               </div>
               <div class="content">
                 <div class="inner-content">
-                  <h4 class="title">T-SHIRTS</h4>
-                  <div class="meta">
-                    <a href="shop.html">Midi</a>
-                    <a href="shop.html">Maxi</a>
-                  </div>
-                  <a href="shop.html" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
+                  <h4 class="title">Clothing | Gamis</h4>
+                  <a href="<?=base_url("galeri/kategori/Gamis");?>" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
                 </div>
               </div>
             </div>
@@ -185,95 +177,6 @@ foreach ($slider as $slider) {  ?>
       </div>
     </section>
     <!--== End Category Area Wrapper ==-->
-
-    <!--== Start Category Slider Area Wrapper ==-->
-    <section class="category-area category-slider-area">
-      <div class="container-fluid pl-xs-15 pr-xs-15 p-0">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="category-slider-content">
-              <div class="swiper-container category-shop-slider-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="category-item">
-                      <div class="thumb">
-                        <img src="<?=base_url("template")?>/assets/img/shop/category/s1.jpg" alt="Moren-Shop">
-                      </div>
-                      <div class="content">
-                        <div class="inner-content">
-                          <h4 class="title">PANTS | JEANS</h4>
-                          <div class="meta">
-                            <a href="shop.html">Midi</a>
-                            <a href="shop.html">Maxi</a>
-                          </div>
-                          <a href="shop.html" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-item">
-                      <div class="thumb">
-                        <img src="<?=base_url("template")?>/assets/img/shop/category/s2.jpg" alt="Moren-Shop">
-                      </div>
-                      <div class="content">
-                        <div class="inner-content">
-                          <h4 class="title">SHORTS | SKIRTS</h4>
-                          <div class="meta">
-                            <a href="shop.html">Jumpsuits</a>
-                            <a href="shop.html">Mini</a>
-                            <a href="shop.html">Midi</a>
-                            <a href="shop.html">Maxi</a>
-                          </div>
-                          <a href="shop.html" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-item">
-                      <div class="thumb">
-                        <img src="<?=base_url("template")?>/assets/img/shop/category/s3.jpg" alt="Moren-Shop">
-                      </div>
-                      <div class="content">
-                        <div class="inner-content">
-                          <h4 class="title">BAGS</h4>
-                          <div class="meta">
-                            <a href="shop.html">Midi</a>
-                            <a href="shop.html">Maxi</a>
-                          </div>
-                          <a href="shop.html" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-item">
-                      <div class="thumb">
-                        <img src="<?=base_url("template")?>/assets/img/shop/category/s4.jpg" alt="Moren-Shop">
-                      </div>
-                      <div class="content">
-                        <div class="inner-content">
-                          <h4 class="title">Accessories</h4>
-                          <div class="meta">
-                            <a href="shop.html">Midi</a>
-                            <a href="shop.html">Maxi</a>
-                          </div>
-                          <a href="shop.html" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--== End Category Slider Area Wrapper ==-->
 
     <!--== Start Products Area Wrapper ==-->
     <section class="product-area new-product-area">
