@@ -52,7 +52,6 @@ foreach ($slider as $slider) {  ?>
       </div>
     </section>
     <!--== End Hero Area Wrapper ==-->
-<?php include("galery.php") ?>
     <!--== End Collection Slider Area Wrapper ==-->
 
     <!--== Start Products Area Wrapper ==-->
