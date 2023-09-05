@@ -110,16 +110,13 @@ foreach ($slider as $slider) {  ?>
           <div class="masonry-item">
             <div class="category-item">
               <div class="thumb">
-                <img src="<?=base_url("template")?>/assets/img/shop/category/g1.jpg" alt="Moren-Shop">
+                <img src="<?=base_url("template")?>/assets/img/shop/categorys/g1.png" alt="Moren-Shop">
               </div>
               <div class="content">
                 <div class="inner-content">
-                  <h4 class="title">SHIRTS | TOPS</h4>
-                  <div class="meta">
-                    <a href="shop.html">Midi</a>
-                    <a href="shop.html">Maxi</a>
-                  </div>
-                  <a href="shop.html" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
+                  <h4 class="title">Scarves | plain</h4>
+                  
+                  <a href="<?=base_url("galeri/kategori/plain");?>" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
                 </div>
               </div>
             </div>
@@ -127,18 +124,12 @@ foreach ($slider as $slider) {  ?>
           <div class="masonry-item item-size2">
             <div class="category-item">
               <div class="thumb">
-                <img src="<?=base_url("template")?>/assets/img/shop/category/g5.jpg" alt="Moren-Shop">
+                <img src="<?=base_url("template")?>/assets/img/shop/categorys/g5.png" alt="Moren-Shop">
               </div>
               <div class="content">
                 <div class="inner-content">
-                  <h4 class="title">DRESSES | JUMPSUITS</h4>
-                  <div class="meta">
-                    <a href="shop.html">Jumpsuits</a>
-                    <a href="shop.html">Mini</a>
-                    <a href="shop.html">Midi</a>
-                    <a href="shop.html">Maxi</a>
-                  </div>
-                  <a href="shop.html" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
+                  <h4 class="title">Scarves | Signature</h4>
+                  <a href="<?=base_url("galeri/kategori/Signature");?>" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
                 </div>
               </div>
             </div>
@@ -146,16 +137,12 @@ foreach ($slider as $slider) {  ?>
           <div class="masonry-item item-size3">
             <div class="category-item">
               <div class="thumb">
-                <img src="<?=base_url("template")?>/assets/img/shop/category/g3.jpg" alt="Moren-Shop">
+                <img src="<?=base_url("template")?>/assets/img/shop/categorys/g3.png" alt="Moren-Shop">
               </div>
               <div class="content">
                 <div class="inner-content">
-                  <h4 class="title">Knitwear</h4>
-                  <div class="meta">
-                    <a href="shop.html">Midi</a>
-                    <a href="shop.html">Maxi</a>
-                  </div>
-                  <a href="shop.html" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
+                <h4 class="title">Prayer | Set</h4>
+                  <a href="<?=base_url("galeri/kategori/Prayer-Set");?>" class="btn-theme btn-white btn-border btn-size-sm">View All</a>
                 </div>
               </div>
             </div>
