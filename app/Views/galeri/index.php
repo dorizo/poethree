@@ -7,7 +7,7 @@
           <div class="col-lg-12">
             <div class="page-title-content">
               <h2 class="title">Shop</h2>
-              <div class="bread-crumbs"><a href="index.html">Home<span class="breadcrumb-sep">></span></a><span class="active">Shop</span></div>
+              <div class="bread-crumbs"><a href="index.html">Home<span class="breadcrumb-sep">></span></a><span class="active"></span></div>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
                   </form>
                 </div>
               </div>
-              <div class="widget">
+              <!-- <div class="widget">
                 <h3 class="widget-title">Categories</h3>
                 <div class="widget-custom-menu">
                     <ul>
@@ -79,7 +79,7 @@
                       </li>
                     </ul>
                   </div>
-              </div>
+              </div> -->
               
               <div class="widget">
                 <div class="widget-banner">
@@ -134,7 +134,7 @@
           <div class="col-lg-9 order-0 order-lg-1">
             <div class="inner-left-padding">
               <div class="shop-toolbar-wrap">
-                <div class="shop-toolbar-left">
+                <!-- <div class="shop-toolbar-left">
                   <div class="product-showing-status">
                     <p class="count-result">Showing 1–12 of 88 results</p>
                   </div>
@@ -174,7 +174,7 @@
                         <button class="nav-link" id="nav-grid-tab" data-bs-toggle="tab" data-bs-target="#nav-grid" type="button" role="tab" aria-controls="nav-grid" aria-selected="true"><i class="lastudioicon-microsoft"></i></button>
                       </div>
                     </nav>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="tab-content" id="nav-tabContent">
@@ -398,7 +398,7 @@
               </div>
               <div class="pagination-area">
                 <nav>
-                  <ul class="page-numbers">
+                  <!-- <ul class="page-numbers">
                     <li>
                       <a class="page-number active" href="shop.html">1</a>
                     </li>
@@ -428,7 +428,7 @@
                         <i class="icofont-long-arrow-right"></i>
                       </a>
                     </li>
-                  </ul>
+                  </ul> -->
                 </nav>
               </div>
             </div>

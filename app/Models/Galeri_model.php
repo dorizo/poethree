@@ -37,10 +37,23 @@ class Galeri_model extends Model
 
 
     // total
-    public function total()
+    public function total($total)
     {
-        $builder = $this->db->table('galeri');
-        $query   = $builder->get();
+        if($total = "page"){
+            $builder = $this->db->table('galeri');
+            $builder->select('galeri.*, kategori_galeri.nama_kategori_galeri, kategori_galeri.slug_kategori_galeri, users.nama');
+            $builder->join('kategori_galeri', 'kategori_galeri.id_kategori_galeri = galeri.id_kategori_galeri', 'LEFT');
+            $builder->join('users', 'users.id_user = galeri.id_user', 'LEFT');
+            $builder->where("slug_kategori_galeri" ,$kat);
+            $builder->orderBy('galeri.id_galeri', 'DESC');
+            $query = $builder->get();
+    
+        }else{
+            $builder = $this->db->table('galeri');
+            $query   = $builder->get();
+        }
+      
+
 
         return $query->getNumRows();
     }

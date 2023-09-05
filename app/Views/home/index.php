@@ -306,7 +306,7 @@ foreach ($slider as $slider) {  ?>
             <!-- Start Product Item -->
             <div class="product-item">
               <div class="product-thumb">
-                <a href="#">
+                <a href="<?=base_url("galeri/read/".$value["id_galeri"]."/".$value["judul_galeri"])?>">
                   <img src="<?= base_url('assets/upload/image/' . $value['gambar']) ?>" alt="Moren-Shop">
                   <span class="thumb-overlay"></span>
                 </a>
@@ -327,7 +327,7 @@ foreach ($slider as $slider) {  ?>
           <?php } ?>
           
           <div class="col-md-12 text-center">
-            <a href="shop.html" class="btn-theme btn-black btn-border btn-padding mt-20">View more</a>
+            <a href="<?=base_url("galeri")?>" class="btn-theme btn-black btn-border btn-padding mt-20">View more</a>
           </div>
         </div>
       </div>

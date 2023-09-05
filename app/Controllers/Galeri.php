@@ -24,6 +24,22 @@ class Galeri extends BaseController
         ];
         echo view('layout/wrapper', $data);
     }
+    public function index()
+    {
+        $m_konfigurasi = new Konfigurasi_model();
+        $m_galeri      = new Galeri_model();
+        $konfigurasi   = $m_konfigurasi->listing();
+        $galeri        = $m_galeri->listing();
+
+        $data = ['title'  => 'Galeri Gambar',
+            'description' => 'Galeri Gambar ' . $konfigurasi['namaweb'] . ', ' . $konfigurasi['tentang'],
+            'keywords'    => 'Galeri Gambar ' . $konfigurasi['namaweb'] . ', ' . $konfigurasi['keywords'],
+            'galeri'      => $galeri,
+            'konfigurasi' => $konfigurasi,
+            'content'     => 'galeri/index',
+        ];
+        echo view('layout/wrapper', $data);
+    }
     public function read($slug_berita)
     {
         $m_konfigurasi = new Konfigurasi_model();
