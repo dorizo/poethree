@@ -35,7 +35,9 @@ class Menu_model extends Model
         $builder = $this->db->table('galeri');
         $builder->select('*');
         $builder->join('kategori_galeri', 'kategori_galeri.id_kategori_galeri = galeri.id_kategori_galeri', 'LEFT');
-        $builder->where(['jenis_galeri' => 'Galeri ']);
+        $builder->where(['jenis_galeri' => 'Galeri']);
+        $builder->orderBy("id_galeri" , "desc");
+        $builder->limit(5);
         $query = $builder->get();
 
         return $query->getResultArray();
