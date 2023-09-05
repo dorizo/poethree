@@ -186,7 +186,7 @@
                       <!-- Start Product Item -->
                       <div class="product-item">
                         <div class="product-thumb">
-                          <a href="shop-single-product.html">
+                      <a href="<?=base_url("galeri/read/".$galeri["id_galeri"]."/".$galeri["judul_galeri"])?>">
                             <img src="<?=base_url("assets/upload/image/".$galeri["gambar"])?>" alt="Moren-Shop">
                             <span class="thumb-overlay"></span>
                           </a>

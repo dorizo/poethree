@@ -21,7 +21,7 @@
                 foreach ($crumbs as $segment) {
                   ?>
                   
-                  <a href="index.html"><?=$segment;?><span class="breadcrumb-sep">></span></a>
+                  <a href="index.html"><?=urldecode($segment);?><span class="breadcrumb-sep">></span></a>
                 <?php
                   }
                 ?>
