@@ -267,7 +267,7 @@
                   <!-- Start Product Item -->
                   <div class="product-item">
                     <div class="product-thumb">
-                      <a href="shop-single-product.html">
+                    <a href="<?=base_url("galeri/read/".$value["id_galeri"]."/".$value["judul_galeri"])?>">
                         <img src="<?=base_url("assets/upload/image/thumbs/".$value["gambar"])?>" alt="Moren-Shop">
                         <span class="bg-thumb" data-bg-img="<?=base_url("assets/upload/image/thumbs/".$value["gambar"])?>" style="background-image: url(_assets/img/shop/d2-2.html);"></span>
                         <span class="thumb-overlay"></span>
