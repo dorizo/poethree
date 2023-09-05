@@ -6,6 +6,7 @@ $berita  = $menu->berita();
 $profil  = $menu->profil();
 $layanan = $menu->layanan();
 $galery = $menu->galery();
+$video = $menu->video();
 $bestsaller = $menu->bestsaller();
 $newproduk = $menu->newproduk();
 $konfigurasi  = new Konfigurasi_model();
@@ -348,8 +349,8 @@ foreach ($slider as $slider) {  ?>
               </div>
               <div class="video-content" data-aos="fade-up" data-aos-duration="1000">
                 <div class="thumb">
-                  <img src="template/assets/img/photos/video1.jpg" alt="Moren-Image">
-                  <a class="btn-play play-video-popup" href="https://www.youtube.com/watch?v=MLpWrANjFbI">
+                  <img src="template/assets/img/photos/video.png" alt="Moren-Image">
+                  <a class="btn-play play-video-popup" href="https://www.youtube.com/watch?v=<?=$video['video']?>">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="none" viewBox="0 0 110 110"><circle cx="55" cy="55" r="54" stroke="currentColor" stroke-width="2" fill="none"></circle><path stroke="currentColor" stroke-width="2" d="M43.5 35.081L78 55 43.5 74.919V35.08z" fill="none"></path></svg>
                   </a>
                 </div>

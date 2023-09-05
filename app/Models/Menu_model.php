@@ -75,4 +75,13 @@ class Menu_model extends Model
 
         return $query->getResultArray();
     }
+
+    public function video()
+    {
+        $builder = $this->db->table('video');
+        $builder->limit(1);
+        $query = $builder->get();
+
+        return $query->getRowArray();
+    }
 }
