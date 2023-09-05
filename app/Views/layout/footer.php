@@ -288,7 +288,7 @@ $menu_layanan = $menu->layanan();
 <script src="<?= base_url() ?>/template/assets/js/jquery-zoom.min.js"></script>
 
 <!--=== Custom Js ===-->
-<script src="<?= base_url() ?>/template/assets/js/custom.js?v1"></script>
+<script src="<?= base_url() ?>/template/assets/js/custom.js?v2"></script>
 
 </body>
 </html>
