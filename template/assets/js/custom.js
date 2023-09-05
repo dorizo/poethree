@@ -656,10 +656,10 @@
    ========================================================================== */
   
   varWindow.on('load', function() {
-    isotopePortfolio();
-    AOS.init({
-      once: true,
-    });
+    // isotopePortfolio();
+    // AOS.init({
+    //   once: true,
+    // });
     stylePreloader();
   });
   
