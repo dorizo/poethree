@@ -15,11 +15,6 @@ $site        = $konfigurasi->listing();
 
 
 
-    <!--== Google Fonts ==-->
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface:400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,900,900i" rel="stylesheet">
-
     <!--== Bootstrap CSS ==-->
   <title><?= $title ?></title>
   <meta content="<?= strip_tags($description) ?>" name="description">
@@ -28,9 +23,6 @@ $site        = $konfigurasi->listing();
   <!-- Favicons -->
   <link href="<?= base_url('assets/upload/image/' . $site['icon']) ?>" rel="icon">
   <link href="<?= base_url('assets/upload/image/' . $site['icon']) ?>" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <!-- DataTables -->
   <link rel="stylesheet" href="<?= base_url() ?>/assets/admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
 

@@ -275,7 +275,8 @@ $menu_layanan = $menu->layanan();
 <!--=== jquery Tippy Js ===-->
 <script src="<?= base_url() ?>/template/assets/js/tippy.all.min.js"></script>
 <!--=== Isotope Min Js ===-->
-<script src="<?= base_url() ?>/template/assets/js/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
 <!--=== jquery Vivus Js ===-->
 <script src="<?= base_url() ?>/template/assets/js/vivus.js"></script>
 <!--=== Parallax Min Js ===-->
