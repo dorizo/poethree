@@ -13,7 +13,7 @@ $menu_layanan = $menu->layanan();
 <div class="wrapper home-default-wrapper">
 
   <!--== Start Preloader Content ==-->
-  <div class="preloader-wrap">
+  <!-- <div class="preloader-wrap">
     <div class="preloader">
       <span class="dot"></span>
       <div class="dots">
@@ -22,7 +22,7 @@ $menu_layanan = $menu->layanan();
         <span></span>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--== End Preloader Content ==-->
 
   <!--== Start Header Wrapper ==-->
