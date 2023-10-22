@@ -200,7 +200,6 @@ $menu_layanan = $menu->layanan();
               <div class="load-percent"></div>
               <div class="label-free-shipping">
                 <div class="free-shipping svg-icon-style">
-                  <span class="svg-icon" id="svg-icon-shipping" data-svg-icon="assets/img/icons/shop1.svg"></span>
                 </div>
                 <p>Spend £101.10 to get Free Shipping</p>
               </div>
