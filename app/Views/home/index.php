@@ -105,8 +105,8 @@ foreach ($slider as $slider) {  ?>
     <!--== Start Category Area Wrapper ==-->
     <section class="category-area category-default-area">
       <div class="container-fluid xs-pr-15 xs-pl-15 p-0" data-aos="fade-up" data-aos-duration="1200">
-        <div class="row row-gutter-6 masonry-grid category-masonry-style1">
-          <div class="masonry-item">
+        <div class="row row-gutter-6 masonry2-grid category-masonry2-style1">
+          <div class="masonry2-item">
             <div class="category-item">
               <div class="thumb">
                 <img src="<?=base_url("template")?>/assets/img/shop/categorys/g1.png" alt="Moren-Shop">
@@ -120,7 +120,7 @@ foreach ($slider as $slider) {  ?>
               </div>
             </div>
           </div>
-          <div class="masonry-item item-size2">
+          <div class="masonry2-item item-size2">
             <div class="category-item">
               <div class="thumb">
                 <img src="<?=base_url("template")?>/assets/img/shop/categorys/g5.png" alt="Moren-Shop">
@@ -133,7 +133,7 @@ foreach ($slider as $slider) {  ?>
               </div>
             </div>
           </div>
-          <div class="masonry-item item-size3">
+          <div class="masonry2-item item-size3">
             <div class="category-item">
               <div class="thumb">
                 <img src="<?=base_url("template")?>/assets/img/shop/categorys/g3.png" alt="Moren-Shop">
@@ -146,7 +146,7 @@ foreach ($slider as $slider) {  ?>
               </div>
             </div>
           </div>
-          <div class="masonry-item item-size3">
+          <div class="masonry2-item item-size3">
             <div class="category-item">
               <div class="thumb">
                 <img src="<?=base_url("template")?>/assets/img/shop/categorys/g2.png" alt="Moren-Shop">
@@ -159,7 +159,7 @@ foreach ($slider as $slider) {  ?>
               </div>
             </div>
           </div>
-          <div class="masonry-item">
+          <div class="masonry2-item">
             <div class="category-item">
               <div class="thumb">
                 <img src="<?=base_url("template")?>/assets/img/shop/categorys/g4.png" alt="Moren-Shop">
